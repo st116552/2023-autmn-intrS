@@ -20,7 +20,6 @@ def count_metrics(y, y_predicted):
 
 def draw_graph(x_arrays, y_arrays, names):
     line_colors = ['b', 'y', 'c', 'g', 'r']
-    # i = 0
 
     for i in range(len(x_arrays)):
         plt.plot(x_arrays[i], y_arrays[i], 'o', label=names[i], color=line_colors[i], linewidth=0.5)
