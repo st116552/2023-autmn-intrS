@@ -6,11 +6,11 @@ from sklearn.model_selection import train_test_split
 
 
 def mse(y, y_predicted):
-    return numpy.mean(y - y_predicted)
+    return numpy.mean(numpy.square(y - y_predicted))
 
 
 def mae(y, y_predicted):
-    return numpy.mean(y - y_predicted)
+    return numpy.mean(numpy.absolute(y - y_predicted))
 
 
 def count_metrics(y, y_predicted):
